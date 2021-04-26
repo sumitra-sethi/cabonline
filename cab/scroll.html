@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>scroll whilr rotating the elements using html css js</title>
+	
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+</head>
+<body style="height: 2154px">
+	<div id="transform" data-500="transform:scale(0) rotate(0deg);" data-1000="transform:scale(1) rotate(1440deg); opacity:1;" data-1700="transform:scale(1) rotate(1440deg); opacity:0;">
+		<h2>Click Your Destination </h2>
+		<p> Booking a cab for inter-city travel has never been this convenient.
+		 With Ola Outstation get a ride
+		 within 1 hour of booking or book up to 7 days in advance.
+		 High-rated and verified partners with outstation
+		 driving experience to give you a smooth travel experience.
+		 We are here for your safe ride.GO to your destination
+		 on one click
+
+		</p>
+		<button class="btn">book your ride</button>
+	</div>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
+	<script>
+		var s=skrollr.init(
+		{
+			edgeStrategy:'set',
+			easing:{
+				WTF:Math.random,
+				inverted:function(p) {
+					return 1-p
+				}
+			}
+		})
+	</script>
+
+</body>
+</html>
